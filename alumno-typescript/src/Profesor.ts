@@ -1,10 +1,16 @@
-export class Profesor {
-  constructor(
-    public nombre: string,
-    public legajo: number
-  ) {}
+import { Persona } from "./Persona";
 
-  
+export class Profesor extends Persona {
+  constructor(
+    nombre: string,
+    legajo: number
+  ) {
+    super(nombre, legajo);
+  }
+
+  obtenerInformacion(): string  {
+    return super.obtenerInformacion();
   }
 
 
+}
