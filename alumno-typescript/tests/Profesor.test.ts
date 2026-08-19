@@ -10,11 +10,10 @@ describe("Profesor", () => {
     expect(profesor.legajo).toBe(77707);
   });
 
- test("un profesor debe tener un nombre y legajo", () => {
-    const profesor = new Profesor("Dr. Ramírez", 77708);
+  test("un profesor debe poder obtener su información", () => {
+    const profesor = new Profesor("Dr. García", 77707);
 
-    expect(profesor.nombre).toBe("Dr. Ramírez");
-    expect(profesor.legajo).toBe(77708);
+    expect(profesor.obtenerInformacion()).toBe("Nombre: Dr. García, Legajo: 77707");
   });
 
 });
