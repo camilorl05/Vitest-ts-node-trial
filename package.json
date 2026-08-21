@@ -1,0 +1,7 @@
+{
+  "name": "vitest-ts-node-trial-root",
+  "private": true,
+  "scripts": {
+    "test": "cd alumno-typescript && npm test"
+  }
+}
