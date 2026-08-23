@@ -12,5 +12,7 @@ export class Profesor extends Persona {
     return super.obtenerInformacion();
   }
 
-
+  obtenersaludo(): string {
+    return `Hola, soy el profesor ${this.nombre}.`;
+  }
 }
