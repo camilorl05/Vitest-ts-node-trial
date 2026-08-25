@@ -1,7 +1,7 @@
 import { Persona } from "./Persona";
 
 export class Profesor 
-            extends Persona {
+             extends Persona {
   constructor(
     nombre: string,
     legajo: number
