@@ -47,4 +47,11 @@ describe("Alumno", () => {
     expect(alumno.esMayorDeEdad()).toBe(true);
     expect(alumno.legajo).toBe(28765);
   });
+
+  test("un alumno de 21 anios debe ser mayor de edad y tener un numero de legajo", () => {
+    const alumno = new Alumno("Martin", 21, 38765);
+    expect(alumno.esMayorDeEdad()).toBe(true);
+    expect(alumno.legajo).toBe(38765);
+  });
+
 })
